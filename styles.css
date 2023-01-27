@@ -1,4 +1,31 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .container {
+      flex-direction: row;
+    }
+    img {
+      width: initial;
+      height: initial;
+    }
+  }
+  
 h3 {
     text-align: center;
   }
@@ -139,3 +166,10 @@ footer nav {
     flex-direction: column;
     }
     }
+
+    @media only screen and (max-width: 600px) {
+        header img {
+            max-width: 100%;
+        }
+    }
+    
